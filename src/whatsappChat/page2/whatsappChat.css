@@ -1,0 +1,124 @@
+
+
+
+.wa-container {
+  max-width: 420px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background: #efeae2;
+}
+
+/* Header */
+.wa-header-chat {
+  display: flex;
+  align-items: center;
+  background: #008069;
+  color: white;
+  padding: 10px;
+}
+
+.profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.user-info h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.user-info span {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.header-icons {
+  margin-left: auto;
+  display: flex;
+  gap: 15px;
+  font-size: 18px;
+}
+
+/* Chat */
+.wa-chat {
+  flex: 1;
+  padding: 10px;
+  background-image: url("https://i.imgur.com/8Km9tLL.png");
+}
+
+.date {
+  text-align: center;
+  font-size: 12px;
+  background: #d9fdd3;
+  width: fit-content;
+  padding: 4px 10px;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+.encrypt {
+  background: #fff3c4;
+  font-size: 12px;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Input */
+.wa-input {
+  display: flex;
+  padding: 8px;
+  background: #f0f2f5;
+}
+
+.wa-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.wa-input button {
+  background: #008069;
+  color: white;
+  border: none;
+  margin-left: 8px;
+  border-radius: 50%;
+  width: 40px;
+}
+
+
+
+
+.msg {
+  max-width: 70%;
+  padding: 8px 10px;
+  margin: 6px 0;
+  font-size: 14px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.msg span {
+  display: block;
+  font-size: 11px;
+  text-align: right;
+  opacity: 0.6;
+}
+
+.sent {
+  background: #d9fdd3;
+  margin-left: auto;
+  border-top-right-radius: 0;
+}
+
+.received {
+  background: #fff;
+  margin-right: auto;
+  border-top-left-radius: 0;
+}

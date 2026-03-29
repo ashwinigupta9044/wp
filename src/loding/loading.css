@@ -1,0 +1,57 @@
+/* full screen dark background */
+.hack-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top, #111827, #020308);
+  color: #00ff6a;
+  font-family: "Consolas", "Courier New", monospace;
+  padding: 10px;
+}
+
+/* top title */
+.hack-title {
+  font-size: 26px;
+  margin-bottom: 16px;
+  letter-spacing: 4px;
+  text-shadow: 0 0 8px #00ff6a;
+  animation: flicker 2s infinite;
+}
+
+/* status text */
+.hack-status {
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/* outer border */
+.hack-bar-outer {
+  width: 80%;
+  max-width: 480px;
+  border: 1px solid #00ff6a;
+  padding: 3px;
+  box-shadow: 0 0 15px rgba(0, 255, 106, 0.5);
+  background: #020308;
+}
+
+/* inner fill bar */
+.hack-bar-inner {
+  height: 18px;
+  background: linear-gradient(90deg, #00ff6a, #66ffcc);
+  box-shadow: 0 0 12px rgba(0, 255, 106, 0.9);
+  transition: width 0.06s linear;
+}
+
+/* halki flicker animation */
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    opacity: 1;
+  }
+  20%, 24%, 55% {
+    opacity: 0.4;
+  }
+}

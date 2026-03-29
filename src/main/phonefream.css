@@ -1,0 +1,46 @@
+ .toolPanel{
+    width: 80px;
+    height: 100vh; 
+    background: #ffffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid #ff0000ff;
+}
+
+@media  (max-width: 480px) {
+  .toolPanel {
+    
+    flex-direction: row;
+    width: 100%;
+    height: 80px;
+    justify-content: space-around;
+  }
+  
+}
+
+.toolItem img {
+  width: 30px;
+}
+
+.toolItem{
+   width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffffff;
+    border: 2px solid #ff0000ff;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    gap:10px 10px;
+}
+
+/* @media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+  }
+} */
+

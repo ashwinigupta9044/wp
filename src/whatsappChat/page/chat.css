@@ -1,0 +1,312 @@
+/* ===== Global ===== */
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Ubuntu, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #111;
+}
+
+/* ===== Chat Screen ===== */
+.wa {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #efeae2;
+}
+
+/* Header */
+.wa-h {
+  height: 56px;
+  background: #075e54;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  gap: 10px;
+}
+
+.bk {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.av {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.u {
+  flex: 1;
+}
+
+.nm {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.st {
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.ic {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Body */
+.wa-b {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background-image: url("");
+}
+
+/* Messages */
+.mb {
+  max-width: 78%;
+  padding: 8px 10px;
+  margin: 6px 0;
+  border-radius: 8px;
+  font-size: 14px;
+  position: relative;
+}
+
+.mb.s {
+  background: #dcf8c6;
+  margin-left: auto;
+  border-top-right-radius: 0;
+}
+
+.mb.r {
+  background: #fff;
+  margin-right: auto;
+  border-top-left-radius: 0;
+}
+
+.mb small {
+  font-size: 10px;
+  color: #555;
+  float: right;
+  margin-left: 6px;
+}
+
+/* Reply box */
+.reply-box {
+  border-left: 3px solid #25d366;
+  padding-left: 6px;
+  margin-bottom: 4px;
+  font-size: 12px;
+  color: #555;
+}
+
+.reply-box b {
+  display: block;
+  color: #075e54;
+}
+
+/* Deleted message */
+.del {
+  background: #fff;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #666;
+  margin: 8px auto;
+  width: fit-content;
+}
+
+/* ===== Missed Call Bubble ===== */
+.call.missed {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 8px 0;
+  max-width: 90%;
+}
+
+.call-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.call-icon.video .video-box {
+  width: 22px;
+  height: 22px;
+  background: #e53935;
+  color: #fff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.call-text strong {
+  display: block;
+  font-size: 14px;
+}
+
+.call-text span {
+  font-size: 12px;
+  color: #666;
+}
+
+.call-time {
+  margin-left: auto;
+  font-size: 12px;
+  color: #666;
+}
+
+/* ===== Input Bar ===== */
+.wa-i {
+  height: 56px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 8px;
+}
+
+.wa-i input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.mic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: #25d366;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* ===== Updates / Status ===== */
+.updates {
+  height: 100vh;
+  background: #fff;
+  overflow-y: auto;
+}
+
+.updates-h {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 14px;
+  font-size: 18px;
+}
+
+.status-sec,
+.channel-sec {
+  padding: 10px;
+}
+
+.status-row {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+}
+
+.status {
+  text-align: center;
+  font-size: 12px;
+}
+
+.status img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+.ring {
+  padding: 2px;
+  border-radius: 50%;
+  border: 2px solid #25d366;
+}
+
+.ring.seen {
+  border-color: #ccc;
+}
+
+.add-circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+/* Channels */
+.channel-row {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.ch-img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #ddd;
+  margin-right: 10px;
+}
+
+.ch-mid span {
+  font-size: 12px;
+  color: #666;
+}
+
+.unread {
+  background: #25d366;
+  color: #fff;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+/* Floating Camera */
+.cam-btn {
+  position: fixed;
+  right: 16px;
+  bottom: 18px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: none;
+  background: #25d366;
+  color: #fff;
+  font-size: 22px;
+}

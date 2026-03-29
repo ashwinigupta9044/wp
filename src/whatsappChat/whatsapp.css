@@ -1,0 +1,358 @@
+/* Main container – mobile look */
+.wa-app {
+  
+  width: 448px;
+  height: 100vh;
+  margin: 0 auto;
+ justify-content: center;
+  background: #0a1014;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  border-radius: 0;
+  
+}
+
+/* Header */
+.wa-header {
+  background: #ffffff;
+  padding: 12px 12px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* position: fixed;
+  top: 0;
+  width: 100%; */
+ 
+}
+
+.wa-header h1 {
+  font-size: 23px;
+  font-weight: 600;
+  color: #029f3e;
+}
+
+.wa-header-right {
+  display: flex;
+  gap: 10px;
+}
+
+.wa-icon-btn {
+  border: none;
+  background: transparent;
+  color: #e9edef;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Search */
+.wa-search-wrapper {
+  padding: 8px 10px;
+  background-color: #ffffff;
+}
+
+.wa-search {
+  width: 100%;
+  border-radius: 999px;
+  border: none;
+  padding: 8px 14px;
+  font-size: 18px;
+  background-color: rgba(194, 189, 184, 0.15);
+  color: #ffffff;
+}
+
+.wa-search::placeholder {
+  color: #83939a;
+}
+
+/* Archived row */
+.wa-archived {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: #111b21;
+  border-bottom: 1px solid #202c33;
+}
+
+.wa-archived-icon {
+  font-size: 18px;
+}
+
+.wa-archived-text {
+  font-size: 14px;
+}
+
+/* Chats list */
+.wa-chats {
+  flex: 1;
+  background: #ffffff;
+  overflow-y: auto;
+}
+
+
+/* .wa-chat-msg-row svg{
+   min-width: 26px;
+  margin-right: 4px;
+  display: block;
+}
+
+.wa-chat-msg-row{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: nowrap;
+} */
+
+/* .wa-chat-msg{
+  margin-left: 2px;
+} */
+
+.wa-chat-row {
+  display: flex;
+  padding: 10px 12px;
+  gap: 10px;
+  align-items: center;
+  /* border-bottom: 1px solid #202c33; */
+  cursor: pointer;
+}
+
+/* .wa-chat-row:hover {
+  background: #ffffff;
+} */
+
+.wa-avatar {
+  min-width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.wa-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.wa-letter {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+/* Chat middle */
+.wa-chat-middle {
+  flex: 1;
+  min-width: 0;
+}
+
+.wa-chat-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.wa-chat-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0A0A0A;
+  margin-right: 6px;
+}
+
+.wa-chat-time {
+  font-size: 11px;
+  color: #00000099;
+}
+
+ .wa-chat-msg-row {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+}
+
+.wa-chat-msg {
+  font-size: 15px;
+  color: #5f6a71;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+} 
+
+
+
+.wa-muted {
+  font-size: 13px;
+}
+
+/* Right side */
+.wa-chat-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.wa-badge {
+  min-width: 18px;
+  padding: 2px 6px;
+  border-radius: 999px;
+  background: #06cf9c;
+  color: #111b21;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* FAB button */
+.wa-fab {
+  position: absolute;
+  right: 16px;
+  bottom: 120px;
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  border: none;
+  font-size: 30px;
+  line-height: 0;
+  background: #06cf9c;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+
+.wa-tick svg path {
+  stroke-width: 2px;
+}
+
+.wa-tick-seen {
+  color: #53BDEB !important; /* Seen Blue */
+}
+
+
+.wa-tick {
+  color: #777;
+  font-size: 13px;
+}
+
+.wa-tick-seen {
+  color: #1da1f2 !important;
+}
+
+Bottom nav
+.wa-bottom-nav {
+   height: 60px; 
+  background: #F7F8FA;
+  display: flex;
+ 
+  align-items: center;
+  border-top: 0.5px solid #202c33;
+}
+
+.wa-tab {
+  flex: 1;  
+  height: 100%;
+  border: none;
+  background: transparent;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+
+.wa-tab span:first-child {
+  font-size: 16px;
+}
+
+.wa-tab.active {
+  color: #00a884;
+  
+}
+
+
+
+
+/* Responsive full-width mobile */
+@media (max-width: 480px) {
+  .wa-app {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+  }
+}
+
+
+/* Scrollbar styling for chats list */
+
+.wa-chats::-webkit-scrollbar {
+  width: 6px;
+}
+
+
+
+/* FIX SVG TICK SPACING LIKE REAL WHATSAPP */
+.wa-chat-msg-row {
+  display: flex;
+  align-items: center;             
+  white-space: nowrap;   /* Prevent text wrapping */
+  gap: 4px; /* Space between tick & text */
+}
+
+/* Prevent double tick overlap */
+.wa-chat-msg-row svg {
+  width: 20px !important;
+  min-width: 20px !important;
+  height: 18px !important;
+  overflow: visible !important;
+  /* flex-shrink: 0 !important; */
+  
+  
+}
+
+/* Fix path visibility & round edges */
+.wa-chat-msg-row svg path {
+  stroke-linecap: round !important;
+  stroke-linejoin: round !important;
+  
+}
+
+
+
+/* Little adjust text up for align */
+.wa-chat-msg {
+  padding-top: 2px;
+}
+
+
+@supports (-ms-ime-align:auto) or (-webkit-text-size-adjust:100%) {
+  .wa-chat-msg-row svg {
+    width: 26px !important;
+    min-width: 26px !important;
+  }
+}
+
+
+
+
+

@@ -1,0 +1,135 @@
+.wa-chat-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+  background: #ece5dd;
+ 
+
+
+  
+}
+
+/* HEADER */
+.wa-chat-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  
+ 
+  color: rgb(0, 0, 0);
+  padding: 10px;
+    
+}
+
+.wa-chat-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.wa-chat-name1 {
+    font-weight: 400; 
+}
+
+.wa-chat-status {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.wa-back-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+}
+
+/* BODY */
+.wa-chat-body {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+/* MESSAGE */
+.wa-msg {
+  width: fit-content;
+  padding: 6px 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  font-size: 14px;
+  position: relative;
+}
+
+.wa-msg-sent {
+  background: #dcf8c6;
+  margin-left: auto;
+}
+
+.wa-msg-received {
+  background: #ffffff;
+}
+
+.wa-msg-time {
+  font-size: 10px;
+  text-align: right;
+  
+  
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4px;
+  margin-left: 10px;
+  margin-bottom: -4px;
+  position: relative;
+  bottom: -5px;
+}
+
+/* INPUT */
+
+.wa-chat-input-container{
+  
+  padding: 5px;
+  width: 100%;
+  display: flex;
+ 
+ 
+  
+
+
+}
+
+.wa-chat-input {
+  display: flex;
+ 
+ 
+  background: #ffffff;
+  padding: 8px 8px;
+  border-radius: 30px;
+  width: 87%;
+  
+  
+}
+
+.wa-chat-input input {
+  flex: 1;
+  border-radius: 50px;
+  
+  border: none;
+  outline: none;
+}
+
+.wa-chat-input button {
+  background: #1eac59;
+  color: white;
+  border: none;
+  
+  width: 40px;
+  margin-left: 8px;
+  font-size: 18px;
+}
+.wa-chat-input button:disabled {
+  background: #a5d6a7;
+}
