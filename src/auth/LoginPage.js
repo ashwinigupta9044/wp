@@ -19,7 +19,7 @@ const LoginPage = () => {
 
     // 👉 Demo validation
     if (email === EMAIL && password === PASSWORD) {
-      navigate("/whatsappHack"); // 👈 dusra page open
+      navigate("/home"); // 👈 dusra page open
        
     } else {
       setError("❌ Email or Password incorrect");
