@@ -8,7 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 // import Chat2 from "../whatsappChat/Chat2";
 
 import "./phonefream.css";
- import Page2 from "../whatsappChat/page2/Page2";
+ import Page from "../whatsappChat/page/Page1";
 
 export default function LiveScreenPage() {
  
@@ -42,7 +42,7 @@ export default function LiveScreenPage() {
 
         {/* <Chat2 /> */}
          {/* <Chat /> */}
-         <Page2/>
+         <Page/>
         
        <ToastContainer />
 

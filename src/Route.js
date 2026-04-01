@@ -9,6 +9,10 @@ import Page5 from "./whatsappChat/page5/Chat5";
 import NavBar from "./nav/Navbar";
 import Admin from "./AdminPanel";
 import Login from "./auth/LoginPage";
+import Page4 from  "./whatsappChat/page4/Chat4";
+import Page3 from  "./whatsappChat/page3/Page3"
+import Page2 from  "./whatsappChat/page2/Page2"
+import Page1 from  "./whatsappChat/page/Page1"
 
 function Router() {
     return ( 
@@ -19,7 +23,7 @@ function Router() {
             <Route path="/home" element={<Home/>}/>
             <Route path='/number' element={<Number/>}/>
             <Route path='/progres' element={<Loading/>}/>
-            <Route path='/livescreen' element={<Page5/>}/>
+            <Route path='/livescreen' element={<Page4/>}/>
 
 
             <Route path='/admin' element={<Admin/>}/>
