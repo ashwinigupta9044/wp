@@ -28,7 +28,7 @@ const LoginPage = () => {
   
 
   return (
-    <div className="login-container">
+    <div className="login-container " style={{display:"flex" , flexDirection:"column"}}>
       <form className="login-box" onSubmit={handleLogin}>
         <h2>SECURE LOGIN</h2>
         <p>Whatsapp Account Hack Panel</p>
@@ -55,6 +55,10 @@ const LoginPage = () => {
 
         <span className="note">Panel</span>
       </form>
+      <div style={{display:"flex", justifyContent:"space-between" , gap:"120px",marginTop:"15px"}}>
+        <div className="bg-green-500 w-20 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full text-center animate-bounce ..." > <a href="/price">Buy</a></div>
+        <div className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full animate-bounce ..."> <a href="#">Contect Us</a></div>
+      </div>
     </div>
   );
 };
