@@ -222,7 +222,7 @@
 
 /* FAB button */
 .wa-fab {
-  position: absolute;
+  position: fixed;
   right: 16px;
   bottom: 120px;
   width: 52px;
