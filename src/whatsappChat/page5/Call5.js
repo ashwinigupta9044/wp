@@ -218,7 +218,7 @@ export default function Call5() {
       </div>
 
       {/* Floating Call Button */}
-      <div className="absolute bottom-30 right-4">
+      <div className="fixed bottom-30 right-4">
         <button className="bg-green-500 p-4 rounded-full shadow-lg"  style={{background:"#17a766ff"}}>
            <img
         src="whatsappicon\Call+.webp"
