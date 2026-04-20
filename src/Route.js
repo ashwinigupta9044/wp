@@ -9,7 +9,7 @@ import Page5 from "./whatsappChat/page5/Chat5";
 import NavBar from "./nav/Navbar";
 import Admin from "./AdminPanel";
 import Login from "./auth/LoginPage";
-import Page4 from  "./whatsappChat/page5/Chat5";
+//import Page4 from  "./whatsappChat/page5/Chat5";
 // import Page3 from  "./whatsappChat/page3/Chat3";
 // import Page2 from  "./whatsappChat/page2/Chat2";
 // import Page1 from  "./whatsappChat/page/";
